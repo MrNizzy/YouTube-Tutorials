@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Navbar dropdown</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left-menu">
+        <div>
+          <img src="brand.svg" alt="logo" class="brand-logo" />
+        </div>
+        <div>
+          <a href="#home" class="item"><i class="fas fa-home"></i> Home</a>
+          <a href="#news" class="item"><i class="far fa-newspaper"></i> News</a>
+          <div class="dropdown item">
+            <button class="drop__button">
+              Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2 - Normal</a>
+              <a href="#">Link 3 - More text here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-menu">
+        <button class="button button--secondary">
+          <i class="far fa-arrow-alt-circle-down"></i>
+        </button>
+        <button class="button button--primary">
+          Sign up <i class="fas fa-sign-in-alt"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

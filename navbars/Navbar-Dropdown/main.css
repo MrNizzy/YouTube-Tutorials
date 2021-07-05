@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+body {
+  background: url("./background.jpg") no-repeat;
+  background-position-y: -20em;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  background: url("./pattern-img-1.png");
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.left-menu {
+  display: flex;
+  padding: 0.5em 2em;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.right-menu {
+  padding-right: 2em;
+}
+.button {
+  border-radius: 0.3em;
+  background-color: rgba(95, 95, 95, 0.2);
+  color: #ff5f7a;
+  border: solid 2px #ff5f7a;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(0.95);
+}
+.button--primary {
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+}
+.button--primary:hover {
+  background-color: rgba(0, 0, 0, 0.486);
+  color: #fff;
+}
+.button--secondary {
+  padding: 0.6em;
+  color: #fff;
+  margin: auto 0.5em;
+}
+.button--secondary:hover {
+  color: #ff5f7a;
+  background: #333;
+  border-radius: 0.3em;
+  border: solid 2px #ff5f7a;
+  cursor: pointer;
+}
+.brand-logo {
+  height: 80px;
+  margin-right: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.brand-logo:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.item{
+    margin: auto 0.5em;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: url("./pattern-img-1.png");
+  min-width: 160px;
+  border: solid 2px #ff5f7a;
+  border-radius: 0.35em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown .drop__button {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.navbar a:hover,
+.drop__button {
+  color: #ff5f7a;
+  background: rgba(0, 0, 0, 0.616);
+  border-radius: 0.3em;
+}
+.dropdown:hover {
+  background: #333;
+  border-radius: 0.3em;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  float: none;
+  color: #ff5f7a;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 0.3em;
+}
